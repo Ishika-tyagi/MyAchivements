@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+}
+.profile-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1a73e8;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+}
+.dark-mode .profile-pic {
+  border-color: #8ab4f8;
+}
+.welcome-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #444;
+  margin: 1.5rem auto 2rem;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.dark-mode .welcome-text {
+  color: #ccc;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+/* Card styling */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode card */
+.dark-mode .card {
+  background-color: #2b2b2b;
+  color: #e6e6e6;
+}
+
+/* Button */
+.toggle-btn {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+.toggle-btn:hover {
+  background-color: #555;
+}
+
+/* Links */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+.dark-mode a {
+  color: #8ab4f8;
+}
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.dark-mode footer {
+  color: #aaa;
+}
+
+
+.search-container {
+  text-align: center;
+  margin: 1rem 0 2rem;
+}
+
+#searchInput {
+  padding: 10px 16px;
+  width: 60%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+#searchInput:focus {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
