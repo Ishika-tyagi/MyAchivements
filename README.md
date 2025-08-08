@@ -23,7 +23,8 @@ You can view the live version of the project here:
 ---
 
 ## 📂 Project Structure
-```MyAchivements/
+```
+MyAchivements/
 │
 ├── index.html # Main HTML page
 ├── css/
@@ -32,7 +33,10 @@ You can view the live version of the project here:
 │ └── script.js # Interactivity and protection
 ├── certificates/ # All certificates in PDF and image format
 ├── images/ # Profile picture and badge images
-└── README.md # Project documentation```
+└── README.md # Project documentation
+```
+
+
 
 ---
 
